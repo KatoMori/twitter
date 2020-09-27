@@ -18,6 +18,7 @@ auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
 
+
 def analyze_tweet_tag_to_plt(tweets,TILL_DAY):
     tweet_count= 0
     flag = 0
@@ -161,7 +162,7 @@ IMAGE_DIR = 'images/'
 TARGET_PATH = PATH_DIR+TARGET_DIR
 TARGET_IMAGE_PATH = TARGET_PATH+IMAGE_DIR
 TARGET_TAG_PATH = TARGET_PATH+TARGET+'_tag_count.txt'
-TARGET_URL_PATH = TARGET_PATH+TARGET+'_url_count.txt'
+
 
 # search
 if __name__ == '__main__':
